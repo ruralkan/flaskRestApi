@@ -5,6 +5,10 @@ from settings import app
 
 db = SQLAlchemy(app);
 
+##To create database first install sqlite3, after enter in python3
+#from BookModel import db
+##db.create_all()
+
 class Book(db.Model):
     __tablename__ = 'books'
     id = db.Column(db.Integer, primary_key=True)
